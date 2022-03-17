@@ -1,0 +1,41 @@
+@font-face{
+    src: url(../../digital-serial/Digital-Serial-Bold.ttf);
+    font-family: digital;
+}
+@font-face{
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+    font-family: myriad-reg;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.foot_head h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: digital;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    overflow: hidden;
+}

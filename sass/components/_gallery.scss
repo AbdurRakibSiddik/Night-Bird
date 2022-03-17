@@ -1,0 +1,85 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+
+#gallery{
+    padding: 80px 0;
+    z-index: 1;
+    position: relative;
+    &::after{
+        @include after_l(0,0,100%,100%,rgba(0, 0, 0, 0.90));
+        z-index: -1;
+    }
+    .common_head{
+        margin-bottom: 30px;
+        h2{
+            @include fs(#fff,22px,700,$dgl);
+            text-transform: uppercase;
+        }
+    }
+    .gel_img{
+        margin-bottom: 30px;
+      position: relative;
+       &:hover .overly{
+           transform: scale(1);
+           transform-origin: top;
+       }
+       
+        .overly{
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           border: 10px solid rgba(255, 255, 255, 0.50);
+           background: rgba(255, 95, 130, 0.50);
+           transform: scale(0);
+           transition: all linear 0.3s;
+            ul{
+                @include middle();
+               
+                gap: 10px;
+                li{
+                   
+                    a{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 20px;
+                        transition: all linear 0.3s;
+                        &:hover{
+                            background: #fff;
+                            color: $hover;
+                        }
+                       
+                    }
+                }
+            }
+          
+
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .gel_button{
+        margin-top: 30px;
+a{
+    @include fs(#fff,16px,700,$dgl);
+    text-transform: uppercase;
+    padding: 3px 17px;
+    border: 1px solid $hover;
+    transition: all linear 0.3s;
+    i{
+        padding-left: 5px;
+    }
+    &:hover{
+        background: $hover;
+    }
+}
+}
+}

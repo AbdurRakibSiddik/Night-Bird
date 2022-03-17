@@ -1,0 +1,244 @@
+@media (max-width: 575px) {
+	body{
+		overflow-x: hidden !important;
+	}
+   /* ================manu part start=========== */
+   .main_manu {
+    padding: 10px 0 10px !important;
+     background: rgba(0, 0, 0, 0.5);
+}
+.navbar-toggler {
+ 
+    border-radius:0;
+   
+    color: #fff;
+}
+.navbar-toggler:focus {
+ 
+    box-shadow: 0 0 0 0;
+}
+.navbar-nav .nav-link {
+  
+    text-align: center;
+}
+   
+   /* ================manu part end=========== */
+   /* ================banner part start=========== */
+   #banner {
+	padding: 115px 0 0px;
+
+}
+#banner .banner_text .about {
+	padding-top: 40px;
+}
+#banner .banner_text h1 {
+
+	font-size: 50px;
+
+}
+#banner .banner_text h1 span {
+
+	font-size: 50px;
+
+}
+#banner .banner_text h2 {
+	
+	font-size: 18px;
+
+}
+#banner .banner_text p {
+
+
+	line-height: 20px;
+	margin-top: 10px;
+}
+#banner .banner_text a {
+
+	margin-top: 3px;
+}
+#banner .banner_text .about {
+	padding-top: 25px;
+}
+#banner .audio_p .audioplayer {
+
+	padding: 0 20px;
+
+}
+   /* ================banner part end=========== */
+   /* ================about part start=========== */
+   #about {
+	padding: 30px 0;
+
+}
+   .common_head.text-center {
+	margin-top: 20px;
+}
+.aboutimg {
+	margin-top: 20px;
+}
+   /* ================about part end=========== */
+   /* ================gellary part start=========== */
+   #gallery {
+	padding: 30px 0;
+	
+}
+.gel_img {
+	margin-top: 20px;
+}
+#gallery .common_head {
+	margin-bottom: 0;
+}
+   /* ================gellary part end=========== */
+   /* ================dj part start=========== */
+   #event {
+
+	padding: 1px 0;
+}
+   #dj {
+	padding: 30px 0;
+	
+}
+#dj .swiper {
+	
+	padding-top: 0px;
+	
+}
+#dj .swiper {
+	
+	padding-bottom: 0px;
+	 
+}
+   /* ================dj part end=========== */
+   /* ================event part start=========== */
+   #event .event_banner .prv_arr {
+	
+	left: 410px;
+
+}
+#event .event_banner .nxt_arr {
+
+	right: 441px;
+
+}
+#event .event_banner .event_text .time {
+	margin-top: 10px;
+}
+#event .event_banner .event_text .time .year, #event .event_banner .event_text .time .month, #event .event_banner .event_text .time .day, #event .event_banner .event_text .time .hour, #event .event_banner .event_text .time .minite, #event .event_banner .event_text .time .second {
+	width: 74px;
+	height: 74px;
+	margin-right: 24px;
+	margin-bottom: 25px;
+}
+
+   /* ================event part end=========== */
+   /* ================blog part start=========== */
+
+   #blog {
+	
+	padding: 30px 0;
+}
+#blog .blog_col {
+	margin-top: -30px !important;
+}
+#blog .blog_col {
+	
+	margin-left: 26px;
+}
+#blog .blog_text h2 {
+
+	padding-top: 10px;
+}
+#blog .blog_text p {
+
+	line-height: 20px;
+	margin-top: 4px;
+	margin-bottom: -10px;
+}
+#blog .blog_col .blog_img .overly {
+	
+	transform: scale(1);
+}
+#blog .blog_col .blog_text a {
+	margin-top: 20px !important;
+}
+#blog .blog_col .blog_text {
+	padding-bottom: 30px;
+}
+#blog .blog_col .blog_text a {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+   /* ================blog part end=========== */
+   /* ================test part start=========== */
+   #tesmonial {
+
+	padding: 1px 0 30px 0;
+}
+#tesmonial .test_banner .test_img img {
+	left: 50%;
+	top: 9px;
+	width: 88px !important;
+	transform: translateX(-50%);
+}
+#tesmonial .test_banner .test_text {
+
+	margin-top: 110px;
+    margin-left: 0;
+}
+#tesmonial .test_banner .test_text {
+
+	text-align: center;
+}
+#tesmonial .test_banner .test_text ul {
+	margin-left: 53px;
+}
+#tesmonial .test_banner .test_text::after {
+	left: 44%;
+	top: -11px;
+	
+}
+#tesmonial .test_banner {
+	padding: 20px 0;
+	
+}
+#tesmonial .test_banner .test_text {
+	
+	padding: 20px;
+
+}
+   /* ================test part end=========== */
+   /* ================mem part start=========== */
+   #member {
+	padding: 1px 0 30px;
+	
+}
+#member .mem_in {
+	margin-top: -30px;
+}
+#member .mem_in2 {
+	margin-top: 30px;
+    margin-bottom: 60px;
+}
+#member .mem_in .btn {
+	opacity: 1;
+	margin-bottom: 20px !important;
+}
+   /* ================mem part end=========== */
+   /* ================footer part start=========== */
+
+   .fffff {
+	width: 60%;
+
+	margin-left: 50px;
+	margin-top: -43px;
+}
+   /* ================footer part end=========== */
+   /* ================mem part start=========== */
+
+
+   /* ================mem part end=========== */
+   /* ================mem part start=========== */
+
+
+   /* ================mem part end=========== */
+}

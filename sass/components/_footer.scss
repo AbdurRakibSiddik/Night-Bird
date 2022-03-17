@@ -1,0 +1,178 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+#footer {
+    padding: 30px 0 0;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        @include after_l(0, 0, 100%, 100%, rgba(0, 0, 0, 0.90));
+        z-index: -1;
+    }
+
+    .foot_top {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 13px;
+        .foot_txt_one {
+            p {
+                @include fs(#ddd, 14px, 400, $open);
+                line-height: 22px;
+            }
+
+            .s_link {
+                .con_icon {
+                    a {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        background: $hover;
+                        text-align: center;
+                        line-height: 35px;
+                        margin-top: 8px;
+
+                        i {
+                            color: #fff;
+
+                        }
+
+                    }
+                }
+
+                ul {
+                    li {
+                        a {
+                            @include fs(#fff, 14px, 300, $open);
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .foot_col_tow {
+            ul {
+                margin-top: 20px;
+
+                li {
+                    p {
+                        @include fs(#ddd, 14px, 400, $open);
+                        line-height: 22px;
+
+                        i {
+                            margin-right: 10px;
+                            color: #fff;
+                        }
+
+                        span {
+                            display: block;
+                            @include fs(#ddd, 14px, 700, $dgl);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .foot_col_three {
+            ul {
+                margin-top: 20px;
+
+                li {
+                    margin-right: 15px;
+                    margin-bottom: 15px;
+
+                    &:nth-child(3),
+                    &:nth-child(6),
+                    &:nth-child(9) {
+                        margin-right: 0;
+                    }
+
+                    &:nth-child(7),
+                    &:nth-child(8),
+                    &:nth-child(9) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .foot_col_four {
+            ul {
+                margin-top: 20px;
+
+                li {
+                    margin-bottom: 10px;
+
+                    input {
+                        width: 100%;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid #ddd;
+
+
+                        padding: 5px 10px;
+                        color: #fff;
+
+                        &::placeholder {
+                            color: #ddd;
+                            @include fs(#ddd, 13px, 400, $open);
+
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid $hover;
+                transition: all linear 0.3s;
+                        padding: 3px 0;
+                    @include fs(#fff,16px,700,$dgl);
+                    text-transform: uppercase;
+                    &:hover{
+                        background: $hover;
+                    }
+                      
+                    }
+                }
+            }
+            .get_social{
+                margin-top: 25px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        margin-right: 10px;
+                             a{
+                                 width: 35px;
+                                 height: 35px;
+                                 border: 1px solid #fff;
+                                 text-align: center;
+                                 line-height: 35px;
+                                 color: #fff;
+                                 border-radius: 50%;
+                                 transition: all linear 0.3s;
+                                 &:hover{
+                                     background: $hover;
+                                     border-color: $hover;
+                                 }
+                                
+                             }
+                    }
+                }
+            }
+        }
+    }
+    .foot_bottom{
+        padding: 20px 0;
+        p{
+            @include fs(#ddd,13px,400,$open);
+            span{
+                @include fs($hover,13px,400,$open);
+                text-transform: uppercase;
+
+            }
+        }
+    }
+}

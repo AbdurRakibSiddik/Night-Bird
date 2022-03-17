@@ -1,0 +1,120 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+#tesmonial{
+    background: #111;
+    padding: 0 0 80px 0;
+ 
+    .common_head {
+        margin-bottom: 30px;
+        
+        h2 {
+            @include fs(#fff, 22px, 700, $dgl);
+            text-transform: uppercase;
+        }
+    }
+    .kakka{
+        position: relative !important;
+        .prv_arr {
+            position: absolute;
+            left: -35px !important;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 9;
+            transition: all linear 0.3s;
+    
+            &:hover {
+                color: $hover;
+            }
+        }
+    
+        .nxt_arr {
+            position: absolute;
+            right: -35px !important;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 9;
+            transition: all linear 0.3s;
+    
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+  
+    .test_banner{
+        padding: 97px 0;
+        position: relative;
+        z-index: 1;
+        &::after{
+            @include after_l(0,0,100%,100%,rgba(0, 0, 0, 0.90));
+            z-index: -1;
+        }
+        .test_img{
+            position: relative;
+            img{
+                position: absolute;
+                left: 0;
+                top: 70px;
+             
+            }
+        }
+        .test_text{
+            position: relative;
+            background: #353535;
+            padding: 30px;
+            margin-left: 20px;
+            z-index: 1;
+            &::after{
+             
+                    position: absolute;
+                    content: '';
+                    left: -17px;
+                    top: 43%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    border-top: 20px solid #353535;
+                    border-left: 20px solid #353535;
+                    border-right: 20px solid #353535;
+                    border-bottom: 20px solid #353535;
+                    border-top-left-radius: 10px;
+                   
+                    transform: rotate(-46deg);
+                    z-index: -1;
+              
+            }
+            h3{
+                @include fs(#fff,16px,700,$open);
+                text-transform: uppercase;
+            }
+            span{
+                @include fs(#ddd,14px,400,$open);
+               
+            }
+            ul{
+                margin-left: -30px;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                   
+                        i{
+                            color: $hover;
+                        }
+                }
+            }
+            p{
+                @include fs(#ddd,14px,400,$open);
+                line-height: 22px;
+               
+            }
+        }
+       
+    }
+   
+}

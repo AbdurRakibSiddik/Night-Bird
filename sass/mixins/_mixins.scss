@@ -1,0 +1,22 @@
+
+@mixin fs($c, $s, $w, $ff){
+    color: $c;
+    font-size: $s;
+    font-weight: $w;
+    font-family: $ff;
+}
+@mixin middle(){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin after_l($l,$t,$w,$h,$bg){
+    position: absolute;
+    content: '';
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+    background: $bg;
+}

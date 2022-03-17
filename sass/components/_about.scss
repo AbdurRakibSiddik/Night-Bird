@@ -1,0 +1,40 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+
+
+
+#about{
+    padding: 80px 0;
+    background: #111;
+    .common_head{
+        h2{
+            @include fs(#fff,22px,700,$dgl);
+            text-transform: uppercase;
+        }
+    }
+    .about_txt{
+        p{
+            @include fs(#ddd,14px,400,$open);
+            line-height: 22px;
+            margin-top: 20px;
+            span{
+                @include fs(#ddd,14px,400,$open);
+               display: block;
+               margin-top: 20px;
+            }
+        }
+        a{
+            @include fs(#fff,16px,700,$dgl);
+            text-transform: uppercase;
+            padding: 3px 17px;
+            border: 1px solid $hover;
+            transition: all linear 0.3s;
+            margin-top: 8px;
+            &:hover{
+                background: $hover;
+            }
+        }
+        
+    }
+}

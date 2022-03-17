@@ -1,0 +1,180 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+#member{
+    padding: 0px 0 80px;
+    background: #111;
+    position: relative;
+    .common_head {
+        margin-bottom: 60px;
+        
+        h2 {
+            @include fs(#fff, 22px, 700, $dgl);
+            text-transform: uppercase;
+        }
+    }
+    .mem_in2{
+        margin-top: -30px;
+        padding-bottom: 20px;
+        background: #353535;
+        padding: 20px 0 -9px;
+        position: relative;
+        transition: all linear 0.3s;
+       
+      
+        &::after{
+            transition: all linear 0.3s;
+            @include after_l(0,115px,100%,1px,$hover);
+        }
+       
+        
+        
+     
+        &:hover {
+            &::after{
+                background: $hover;
+            }
+        }
+        h3{
+            @include fs(#fff,22px,700,$dgl);
+            text-transform: uppercase;
+            padding-top: 20px;
+    
+        }
+        p{
+            @include fs(#fff,22px,700,$dgl);
+           
+            background: $hover;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+           margin-top: 20px;
+            text-align: center;
+            line-height: 100px;
+            z-index: 2;
+            transition: all linear 0.3s;
+            span{
+                transition: all linear 0.3s;
+                @include fs(#fff,16px,700,$dgl);
+    
+            }
+          
+    
+        }
+        ul{
+            margin-top: 145px;
+            margin-left: -35px;
+            li{
+                 margin: 15px 0;
+               
+                a{
+                    @include fs(#ddd,14px,400,$open);
+                }
+            }
+        }
+        .btn2{
+            background: $hover;
+            width: 100%;
+            border-radius: 0;
+           
+           transition: all linear 0.3s;
+          
+    
+            a{
+              @include fs (#fff,16px,700,$dgl);
+              text-transform: uppercase;
+            }
+        }
+    }
+
+.mem_in{
+    background: #353535;
+    padding: 20px 0 -9px;
+    position: relative;
+    transition: all linear 0.3s;
+   
+  
+    &::after{
+        transition: all linear 0.3s;
+        @include after_l(0,115px,100%,1px,#fff);
+    }
+    &:hover .btn{
+       opacity: 1;
+          margin-bottom: 20px !important;
+     }
+     &:hover p{
+        background: $hover;
+        color: #fff;
+    }
+     &:hover span{
+      
+        color: #fff;
+    }
+     &:hover{
+      margin-top: -30px;
+    }
+    &:hover {
+        &::after{
+            background: $hover;
+        }
+    }
+    h3{
+        @include fs(#fff,22px,700,$dgl);
+        text-transform: uppercase;
+        padding-top: 20px;
+
+    }
+    p{
+        @include fs($hover,22px,700,$dgl);
+       
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+       margin-top: 20px;
+        text-align: center;
+        line-height: 100px;
+        z-index: 2;
+        transition: all linear 0.3s;
+        span{
+            transition: all linear 0.3s;
+            @include fs($hover,16px,700,$dgl);
+
+        }
+      
+
+    }
+    ul{
+        margin-top: 145px;
+        margin-left: -35px;
+        li{
+             margin: 15px 0;
+           
+            a{
+                @include fs(#ddd,14px,400,$open);
+            }
+        }
+    }
+    .btn{
+        background: $hover;
+        width: 100%;
+        border-radius: 0;
+        opacity: 0;
+       transition: all linear 0.3s;
+      
+
+        a{
+          @include fs (#fff,16px,700,$dgl);
+          text-transform: uppercase;
+        }
+    }
+}
+
+
+}
